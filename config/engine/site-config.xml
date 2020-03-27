@@ -135,12 +135,20 @@ This file configures site properties used by Crafter Engine
     <provider>commercetools</provider>
 
     <!-- Specific configurations for commercetools provider -->
-    <commercetools>
+    <!-- <commercetools>
       <projectKey>${env:projectKey}</projectKey>
       <clientId>${env:clientId}</clientId>
       <clientSecret>${env:clientSecret}</clientSecret>
       <authUrl>${env:authUrl}</authUrl>
       <apiUrl>${env:apiUrl}</apiUrl>
+      <scopes>manage_project</scopes>
+    </commercetools> -->
+    <commercetools>
+      <projectKey>commerce-shop-key-123456789</projectKey>
+      <clientId>w28sEQDhoCv78oYPgZVUeWcb</clientId>
+      <clientSecret>E9Js3IvenwRwpCdgh_SyZokT0eU-7UC3</clientSecret>
+      <authUrl>https://auth.us-central1.gcp.commercetools.com/</authUrl>
+      <apiUrl>https://api.us-central1.gcp.commercetools.com/</apiUrl>
       <scopes>manage_project</scopes>
     </commercetools>
 
