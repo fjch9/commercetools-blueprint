@@ -54,12 +54,12 @@
 
   <!-- Parent beans, all providers should extend these -->
   <bean id="baseCustomerService" abstract="true">
-    <property name="verificationEnabled" value="${ecommerce.email.verification.enabled}"/>
+    <!-- <property name="verificationEnabled" value="${ecommerce.email.verification.enabled}"/>
     <property name="verificationTokenTimeout" value="${ecommerce.email.verification.timeout}"/>
     <property name="verificationAddress" value="${ecommerce.email.verification.address}"/>
     <property name="verificationSubject" value="${ecommerce.email.verification.subject}"/>
     <property name="verificationUrl" value="${ecommerce.email.verification.url}"/>
-    <property name="verificationTemplate" value="${ecommerce.email.verification.template}"/>
+    <property name="verificationTemplate" value="${ecommerce.email.verification.template}"/> -->
     <property name="urlTransformationService" ref="crafter.urlTransformationService"/>
     <property name="storeService" ref="storeService"/>
   </bean>
@@ -81,11 +81,11 @@
 
   <bean id="sphereClient" lazy-init="true"
         class="org.craftercms.sites.ecommerce.service.commercetools.ClientFactory">
-    <property name="projectKey" value="${ecommerce.commercetools.projectKey}"/>
+    <!-- <property name="projectKey" value="${ecommerce.commercetools.projectKey}"/>
     <property name="clientId" value="${ecommerce.commercetools.clientId}"/>
     <property name="clientSecret" value="${ecommerce.commercetools.clientSecret}"/>
     <property name="authUrl" value="${ecommerce.commercetools.authUrl}"/>
-    <property name="apiUrl" value="${ecommerce.commercetools.apiUrl}"/>
+    <property name="apiUrl" value="${ecommerce.commercetools.apiUrl}"/> -->
     <property name="scopes" value="${ecommerce.commercetools.scopes}"/>
   </bean>
 
