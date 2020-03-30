@@ -62,6 +62,6 @@ schema.field(newFieldDefinition()
 
 schema.fetcher('Store', 'settings', { env -> [:] }) // needed so GraphQL doesn't skip the sub-fields
 
-schema.fetcher('StoreSettings', 'name', { env -> applicationContext.storeService.name })
-schema.fetcher('StoreSettings', 'locales', { env -> applicationContext.storeService.locales })
-schema.fetcher('StoreSettings', 'currencies', { env -> applicationContext.storeService.currencies })
+// schema.fetcher('StoreSettings', 'name', { env -> applicationContext.storeService.name })
+// schema.fetcher('StoreSettings', 'locales', { env -> applicationContext.storeService.locales })
+// schema.fetcher('StoreSettings', 'currencies', { env -> applicationContext.storeService.currencies })
