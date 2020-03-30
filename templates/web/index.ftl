@@ -24,13 +24,13 @@
 
 <#assign currenciesString = '"' + applicationContext.storeService.getCurrencies()?join('", "') + '"'>
 <#assign localesString = '"' + applicationContext.storeService.getLocales()?join('", "') + '"'>
-<#assign storeSettingsJSON = '
+<#--  <#assign storeSettingsJSON = '
 {
   name: "${applicationContext.storeService.getName()}",
   currencies: [${currenciesString}],
   locales: [${localesString}]
 }
-'>
+'>  -->
 
 <#assign crafterSiteName = siteContext.siteName!"">
 
